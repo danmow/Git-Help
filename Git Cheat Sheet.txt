@@ -1,0 +1,23 @@
+Git Commands Cheat Sheet
+
+git init [repo name]             -- Creates a repo locally
+git clone [url]                  -- Pulls remote repo onto local PC
+git status                       -- Determine what state which files are in (staged/untracked etc.)
+git add [file name]              -- Track and stage file 
+git commit -m [commit message]   -- Commits changes to current branch and adds a message
+git log                          -- View commit history
+ + (-p)                          -- Shows the difference introduced with each commit
+ + (-2)                          -- Shows only last 2 commits
+git commit --amend               -- Re-do commit if file forgotten or message wrong
+git reset HEAD [file]            -- Unstage file
+git checkout -- [file]           -- Unmodify
+git remote                       -- Lists shortnames of specified remotes (eg origin)
+git remote add [shortname] [url] -- Creates a remote repository and adds a short name
+git fetch [remote name]          -- Pulls down all data from the remote (updates any changes since you cloned/last fetched)
+git pull                         -- Pulls and automatically merges files from the remote master with your local master
+git push [remote] [branch]       -- Push your files to the branch on the remote you're working on (A commit to the remote branch)
+git branch [branch name]         -- Creates new branch
+git checkout [branch name]       -- Switch branches
+ + (-b)                          -- Create and switch to branches
+git merge [branch name]          -- Merge branch with master branch
+git branch -d [branch name]      -- Delete branch
