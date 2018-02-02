@@ -21,3 +21,4 @@ git checkout [branch name]       -- Switch branches
  + (-b)                          -- Create and switch to branches
 git merge [branch name]          -- Merge branch with master branch
 git branch -d [branch name]      -- Delete branch
+git ls-tree --full-tree -r HEAD  -- View all files in repo
